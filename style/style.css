@@ -170,25 +170,23 @@ section{
     font-weight: 600;
 }
 .offer .btn:hover{
-    background: rgba(142, 147, 146, 0.5);
+    background: rgba(142, 147, 146, 0.597);
     outline: none;
 }
-
 /* blogs section style */
 
-.blogs-container{
+.blog-box{
     display: flex;
-
+    gap: 15px;
+    align-items: center;
 }
-.blog-img img{
-    width: 300px;
-    height: 380px;
+.blog-img{
+    width: 50%;
+    height: 300px;
 }
-.blog-content{
-    display: flex;
-    text-align: justify;
+.blog{
+    width: 50%;
 }
-
 
     /* footer section style */
 
