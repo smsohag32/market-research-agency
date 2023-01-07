@@ -2,16 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Open+Sans:wght@600&family=Poppins:wght@400;700&family=Righteous&family=Roboto+Slab:wght@600&display=swap');
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 /* header banner style */
+body{
+    background: rgba(210, 209, 209, 0.2);
+}
 .header {
-    background-image: url('../images/banner/banner3.png');
+    background-image: url('../images/banner/banner4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(231, 242, 230, 0.402);
+    background-blend-mode: multiply;
     padding: 160px 180px 150px;
 }
 
@@ -60,8 +68,10 @@ section{
     margin-bottom: 70px;
 }
 
-    /* benefit section style */
+/* benefit section style */
+
 .benefit {
+    background: rgba(209, 206, 206, 0.105);
     margin-top: 130px;
     display: flex;
     justify-content: space-between;
@@ -72,10 +82,21 @@ section{
     width: 400px;
     height: 500px;
 }
+.benefit-title{
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.benefit-des{
+    padding: 0 0 18px 15px;
+}
 
 /* li check mark style  */
 .benefit ul {
     list-style: none;
+    padding-left: 15px;
+}
+.benefit ul li{
+    text-align: justify;
 }
 
 .benefit ul li::before {
@@ -111,6 +132,7 @@ section{
 }
 
 .service-item{
+    width: 100%;
     align-items: center;
     text-align: center;
 }
@@ -128,7 +150,7 @@ section{
 }
 .blog-content{
     display: flex;
-    /* text-align: justify; */
+    text-align: justify;
 }
 
 
