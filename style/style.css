@@ -1,0 +1,191 @@
+/* google font import link */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Open+Sans:wght@600&family=Poppins:wght@400;700&family=Righteous&family=Roboto+Slab:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* header banner style */
+.header {
+    background-image: url('../images/banner/banner3.png');
+    padding: 160px 180px 150px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.header-title {
+    width: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: right;
+}
+
+.header-description {
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.btn {
+    padding: 15px 18px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgba(11, 233, 85, 0.843);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* main section style */
+
+main {
+    margin: 0px 180px;
+
+}
+
+section{
+    margin-bottom: 70px;
+}
+
+    /* benefit section style */
+.benefit {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.benefit .benefit-img img{
+    width: 400px;
+    height: 500px;
+}
+
+/* li check mark style  */
+.benefit ul {
+    list-style: none;
+}
+
+.benefit ul li::before {
+    content: "✓";
+    color: rgb(20, 151, 245);
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    /* offer banner style */
+
+.offer{
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/watch.png'),
+    linear-gradient( to right, rgba(57,127,9,1) 35%, rgba(93,93,82,0.4738270308123249) 94%);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: white;
+}
+.offer-content{
+    align-items: center;
+    padding: 55px 60px;
+    width: 50%;
+}
+    /* service section style */
+
+.service-container{
+    display: flex;
+    gap: 30px;
+}
+
+.service-item{
+    align-items: center;
+    text-align: center;
+}
+
+    /* blogs section style */
+
+.blogs-container{
+    display: flex;
+
+}
+
+.blog-img img{
+    width: 300px;
+    height: 380px;
+}
+.blog-content{
+    display: flex;
+    /* text-align: justify; */
+}
+
+
+    /* footer section style */
+
+footer{
+    width: 100%;
+    height: 460px;  
+    background: black;
+    color: white;
+}
+.footer-container{
+    display: flex;
+    gap: 250px;
+    padding: 110px 180px 60px;
+}
+.contact-info{
+    width: 50%;
+}
+.about-title{
+    margin-bottom: 18px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.about-info{
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 400px;
+}
+.contact-mail{
+    margin-bottom: 7px;
+}
+.contact-number{
+    margin-bottom: 18px;
+}
+    /* subscribe form style */
+.form-title{
+    font-size: 20px;
+    font-weight: 500px;
+    margin-bottom: 20px;
+}
+.form-input{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 8px 15px;
+    background: transparent;
+    border: 1.5px solid rgba(160, 156, 156, 0.68);
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.form-input:focus{
+    color: white;
+    background: rgba(106, 100, 100, 0.235);
+    outline: none;
+}
+
+
+
