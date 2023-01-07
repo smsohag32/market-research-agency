@@ -2,19 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Open+Sans:wght@600&family=Poppins:wght@400;700&family=Righteous&family=Roboto+Slab:wght@600&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    border: 1px solid red;
 }
-
-body{
+body {
     background: rgba(210, 209, 209, 0.2);
+    height: 100vh;
 }
 
 /* header banner style */
+
 .header {
     background-image: url('../images/banner/banner4.png');
     background-size: contain;
@@ -23,14 +22,12 @@ body{
     background-blend-mode: multiply;
     padding: 160px 180px 150px;
 }
-
 .header-content {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: flex-end;
 }
-
 .header-title {
     width: 50%;
     font-size: 40px;
@@ -38,7 +35,6 @@ body{
     margin: 20px 0;
     text-align: right;
 }
-
 .header-description {
     width: 50%;
     font-size: 18px;
@@ -47,8 +43,7 @@ body{
     text-align: right;
     color: rgba(84, 76, 76, 0.6);
 }
-
-.btn {
+.btn{
     padding: 15px 18px;
     border: none;
     font-size: 20px;
@@ -58,19 +53,19 @@ body{
     border-radius: 8px;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
     background: transparent;
     outline: auto;
     color: black;
 }
+
 /* main section style */
 
 main {
     margin: 0px 180px;
 
 }
-
-section{
+section {
     margin-bottom: 70px;
 }
 
@@ -78,23 +73,23 @@ section{
 
 .benefit {
     background: rgba(209, 206, 206, 0.1);
-    margin-top: 130px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
     padding: 0px 20px;
 }
-.benefit .benefit-img img{
+.benefit .benefit-img img {
     padding-left: 10px;
     width: 400px;
     height: 500px;
 }
-.benefit-title{
+.benefit-title {
     font-size: 24px;
     margin-bottom: 18px;
 }
-.benefit-des{
+.benefit-des {
     padding: 0 0 18px 15px;
     color: rgba(84, 76, 76, 0.6);
 }
@@ -105,7 +100,7 @@ section{
     list-style: none;
     padding-left: 15px;
 }
-.benefit ul li{
+.benefit ul li {
     color: rgba(59, 55, 55, 0.6);
     font-size: 15px;
 }
@@ -117,117 +112,146 @@ section{
     margin-left: 10px;
     margin-right: 10px;
 }
+
 /* service section style */
 
-.service-container{
+.service-container {
     display: flex;
     gap: 30px;
 }
-.service-item{
+.service-item {
     width: 100%;
     align-items: center;
     text-align: center;
     box-shadow: 0px 5px 8px rgba(209, 206, 206, 0.2);
 }
-.service i{
+.service i {
     font-size: 35px;
     color: black;
     background: rgba(2, 226, 242, 0.8);
     padding: 10px;
     border-radius: 50%;
 }
-.service .service-title{
+.service .service-title {
     margin: 18px 0;
     width: 100%;
 }
-.service .service-des{
+.service .service-des {
     padding: 0 7px 14px;
     text-align: center;
 }
 
 /* offer banner style */
 
-.offer{
+.offer {
     width: 100%;
     height: 300px;
     background-image: url('../images/watch.png'),
-    linear-gradient( to right, rgba(6, 248, 236, 0.9) 50%, rgba(35, 203, 241, 0.15) 94%);
+    linear-gradient(to right, rgba(6, 248, 236, 0.9) 50%, rgba(35, 203, 241, 0.15) 94%);
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
+    background-blend-mode: overlay;
     color: white;
+    border-radius: 6px;
 }
-.offer-content{
-    margin: 80px 60px;
+.offer-content {
+    position: absolute;
+    margin: 75px 45px;
 }
-.offer h3{
+.offer-title {
     font-size: 40px;
     margin-bottom: 8px;
     font-weight: 700;
 }
-.offer .btn{
+.offer .btn {
     letter-spacing: 2px;
     margin-top: 8px;
     font-weight: 600;
+    background: white;
+    color: black;
 }
-.offer .btn:hover{
-    background: rgba(142, 147, 146, 0.597);
-    outline: none;
+.offer .btn:hover {
+    background: transparent;
+    outline: auto;
 }
+
 /* blogs section style */
 
-.blog-box{
+.blogs .blogs-heading {
+    text-align: right;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.blog-box {
     display: flex;
     gap: 15px;
     align-items: center;
 }
-.blog-img{
+.blog-img {
     width: 50%;
     height: 300px;
 }
-.blog{
+.blog {
     width: 50%;
+    box-shadow: 0px 5px 8px rgba(209, 206, 206, 0.2);
+}
+.blogs .blog-title {
+    padding: 10px;
+}
+.blogs article {
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(84, 76, 76, 0.6);
 }
 
-    /* footer section style */
+/* footer section style */
 
-footer{
+footer {
     width: 100%;
-    height: 460px;  
-    background: black;
+    height: 450px;
+    background-color: black;
     color: white;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     gap: 250px;
-    padding: 110px 180px 60px;
+    padding: 100px 180px 10px;
 }
-.contact-info{
+.contact-info {
     width: 50%;
 }
-.about-title{
+.about-title {
     margin-bottom: 18px;
     font-size: 30px;
     letter-spacing: 1px;
     font-weight: 600;
 }
-.about-info{
+.about-info {
     margin-bottom: 18px;
     font-size: 15px;
     font-weight: 400px;
 }
-.contact-mail{
+.contact-mail {
     margin-bottom: 7px;
 }
-.contact-number{
+.contact-number {
     margin-bottom: 18px;
 }
-    /* subscribe form style */
-.form-title{
+.social-media img{
+    margin-right: 18px;
+}
+
+/* subscribe form style */
+
+.form-title {
     font-size: 20px;
     font-weight: 500px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
-.form-input{
+.form-input {
     margin-bottom: 20px;
     width: 100%;
     padding: 8px 15px;
@@ -236,12 +260,20 @@ footer{
     font-size: 16px;
     border-radius: 5px;
 }
-
-.form-input:focus{
+.form-input:focus {
     color: white;
     background: rgba(106, 100, 100, 0.235);
     outline: none;
 }
-
-
-
+.input-btn{
+    padding: 8px 12px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.input-btn:hover{
+    background: transparent;
+    outline: auto;
+    color: white;
+}
