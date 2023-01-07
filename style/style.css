@@ -7,18 +7,19 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
-/* header banner style */
 body{
     background: rgba(210, 209, 209, 0.2);
 }
+
+/* header banner style */
 .header {
     background-image: url('../images/banner/banner4.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: rgba(231, 242, 230, 0.402);
+    background-color: rgba(231, 242, 230, 0.4);
     background-blend-mode: multiply;
     padding: 160px 180px 150px;
 }
@@ -44,6 +45,7 @@ body{
     font-weight: 500;
     margin-bottom: 20px;
     text-align: right;
+    color: rgba(84, 76, 76, 0.6);
 }
 
 .btn {
@@ -51,12 +53,16 @@ body{
     border: none;
     font-size: 20px;
     font-weight: 500;
-    background: rgba(11, 233, 85, 0.843);
+    background: rgba(2, 226, 242, 0.8);
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
 }
-
+.btn:hover{
+    background: transparent;
+    outline: auto;
+    color: black;
+}
 /* main section style */
 
 main {
@@ -71,14 +77,16 @@ section{
 /* benefit section style */
 
 .benefit {
-    background: rgba(209, 206, 206, 0.105);
+    background: rgba(209, 206, 206, 0.1);
     margin-top: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
+    padding: 0px 20px;
 }
 .benefit .benefit-img img{
+    padding-left: 10px;
     width: 400px;
     height: 500px;
 }
@@ -88,17 +96,19 @@ section{
 }
 .benefit-des{
     padding: 0 0 18px 15px;
+    color: rgba(84, 76, 76, 0.6);
 }
 
 /* li check mark style  */
+
 .benefit ul {
     list-style: none;
     padding-left: 15px;
 }
 .benefit ul li{
-    text-align: justify;
+    color: rgba(59, 55, 55, 0.6);
+    font-size: 15px;
 }
-
 .benefit ul li::before {
     content: "✓";
     color: rgb(20, 151, 245);
@@ -107,43 +117,69 @@ section{
     margin-left: 10px;
     margin-right: 10px;
 }
-
-    /* offer banner style */
-
-.offer{
-    width: 100%;
-    height: 300px;
-    background-image: url('../images/watch.png'),
-    linear-gradient( to right, rgba(57,127,9,1) 35%, rgba(93,93,82,0.4738270308123249) 94%);
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    color: white;
-}
-.offer-content{
-    align-items: center;
-    padding: 55px 60px;
-    width: 50%;
-}
-    /* service section style */
+/* service section style */
 
 .service-container{
     display: flex;
     gap: 30px;
 }
-
 .service-item{
     width: 100%;
     align-items: center;
     text-align: center;
+    box-shadow: 0px 5px 8px rgba(209, 206, 206, 0.2);
+}
+.service i{
+    font-size: 35px;
+    color: black;
+    background: rgba(2, 226, 242, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+}
+.service .service-title{
+    margin: 18px 0;
+    width: 100%;
+}
+.service .service-des{
+    padding: 0 7px 14px;
+    text-align: center;
 }
 
-    /* blogs section style */
+/* offer banner style */
+
+.offer{
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/watch.png'),
+    linear-gradient( to right, rgba(6, 248, 236, 0.9) 50%, rgba(35, 203, 241, 0.15) 94%);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: white;
+}
+.offer-content{
+    margin: 80px 60px;
+}
+.offer h3{
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.offer .btn{
+    letter-spacing: 2px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+.offer .btn:hover{
+    background: rgba(142, 147, 146, 0.5);
+    outline: none;
+}
+
+/* blogs section style */
 
 .blogs-container{
     display: flex;
 
 }
-
 .blog-img img{
     width: 300px;
     height: 380px;
